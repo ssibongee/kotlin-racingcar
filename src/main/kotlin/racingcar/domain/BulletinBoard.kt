@@ -1,6 +1,6 @@
 package racingcar.domain
 
-class BulletinBoard(val scores: Map<Lap, Records> = mapOf(), val winners: Names = Names.of(listOf())) {
+class BulletinBoard(val scores: Map<Lap, Records> = mapOf(), val winners: Names = Names.EMPTY_NAMES) {
 
     fun record(participants: RacingCars, lap: Lap): BulletinBoard {
         val temp = scores.toMutableMap()

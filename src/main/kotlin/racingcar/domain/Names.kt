@@ -4,7 +4,7 @@ package racingcar.domain
 value class Names private constructor(val values: List<Name> = listOf()) {
 
     companion object {
-        private val EMPTY_NAMES = Names()
+        val EMPTY_NAMES = Names()
 
         fun of(names: List<String> = listOf()): Names {
             if(names.isEmpty()) return EMPTY_NAMES
